@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div class="jumbotron">
+  <center>
+  <h2>Here is a list of all available puppies</h2>
+    </center>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Puppy Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    {% for puppy in puppies  %}
+    <tr>
+      <td>{{puppy.id}}</td>
+      <td>
+        {{puppy.name}}
+      </td>
+      <td>
+          <a href="/add?id={{puppy.id}}" >Edit</a>
+      </td>
+      <td>
+          <a href="/delete?id={{puppy.id}}">Delete</a>
+      </td>
+      </tr>
+    {% endfor %}
+  </table>
+  <center>
+  <a href="/add" class="btn btn-info">Add</a>
+  </center>
+</div>
