@@ -1,7 +1,7 @@
 # April_6_2021-DB_CRUD
  
-Sign up & Logging In
+Signup & Login
 
-CRUD with one mode [ a pet store : Create , Read , Update Delete ]
+CRUD with one mode [ A pet store : Create , Read , Update, Delete ]
 
-Single page with Bootstrap Nav bar
+Homepage with Bootstrap Navbar
